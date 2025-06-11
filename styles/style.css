@@ -1,0 +1,96 @@
+div {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+body {
+  background-color: rgb(185, 184, 204);
+  background: linear-gradient(rgb(185, 184, 204), #ffdff7);
+}
+
+h1 {
+  background-color: #ccdab7;
+  background: linear-gradient(45deg, #ccdab7, #dddddc);
+  border: 2px solid #ccdab7;
+  padding: 20px;
+  font-size: 40px;
+  border-radius: 10px;
+  box-shadow: 0.1em 0.1em 0.25em rgb(24, 16, 16);
+}
+
+h2 {
+  padding-top: 10px;
+  font-size: 20px;
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+p {
+  line-height: 125%;
+}
+.target {
+  border: 1px solid #ffdff7;
+  border-radius: 10px;
+  box-shadow: 0.3em 0.3em 1em rgb(22, 21, 21);
+  padding: 25px;
+  transition-property: background-color;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.target:hover,
+.target:focus {
+  background-color: #eee;
+}
+:target {
+  transform: pressed;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+#positivity {
+  font-size: 10px;
+  font-style: italic;
+  font-weight: lighter;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#greeting {
+  font-size: 35px;
+  font-weight: lighter;
+  font-style: oblique;
+}
+#flower {
+  font-size: 65px;
+  font-weight: lighter;
+  font-style: italic;
+}
+.encouragement {
+  font-size: 25px;
+}
+.target {
+  transition-property: background-color;
+  transition-duration: 200ms;
+  background-color: #ccdab7;
+}
+
+.target:hover,
+.target:focus,
+.target:active {
+  background-color: #dcddda;
+  box-shadow: none;
+}
+
+hr {
+  background-color: #ccdab7;
+  height: 2px;
+}
+a {
+  display: block;
+  padding: 20px;
+  color: #1c1a1b;
+}

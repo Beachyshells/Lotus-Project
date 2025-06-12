@@ -14,7 +14,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(132, 132, 132, 0.5); /* Adjust alpha for darkness */
+  background: rgba(132, 132, 132, 0.5);
   z-index: 1;
   pointer-events: none;
 }
@@ -67,8 +67,7 @@ p {
   cursor: pointer;
 }
 
-.target:hover,
-.target:focus {
+.target:hover {
   background-color: #eee;
 }
 :target {
@@ -80,7 +79,7 @@ img {
   margin: 0 auto;
   width: 100px;
 }
-#positivity {
+#positivity .encouragement {
   font-size: 10px;
   font-style: italic;
   font-weight: lighter;
@@ -93,13 +92,10 @@ img {
   font-weight: lighter;
   font-style: oblique;
 }
-#flower {
-  font-size: 65px;
-  font-weight: lighter;
-  font-style: italic;
-}
+
 .encouragement {
   font-size: 25px;
+  font-weight: bold;
 }
 .target {
   transition-property: background-color;

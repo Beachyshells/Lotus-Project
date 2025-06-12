@@ -1,23 +1,35 @@
-function updateHeading(newHeading) {
-  let heading = document.querySelector("h1");
-  heading.innerHTML = newHeading;
-}
+const affirmations = [
+  "~ You are enough, just as you are 🧘🏻‍♀️",
+  "~ Breathe in calm, breathe out stress.",
+  "~ Every day is a new beginning.",
+  "~ You are growing stronger each moment.",
+  "~ Peace begins with a single breath.",
+  "~ Trust yourself and your journey.",
+  "~ You are rooted in strength and grace.",
+  "~ Your potential is as endless as the sky.",
+  "~ Small steps every day lead to big changes.",
+  "~ You are a light in the world—shine bright.",
+  "~ Growth is found in the gentle moments.",
+  "~ Your kindness creates ripples of hope.",
+  "~ Every breath is a fresh beginning.",
+  "~ You are worthy of peace and happiness.",
+  "~ Trust the timing of your journey.",
+  "~ Strength grows in the calm of your heart.",
+  "~ You are exactly where you need to be.",
+];
 
-function breatheIn() {
-  let name = prompt("What is your name?");
-  let favFlower = prompt("What is your favorite flower");
+function showAffirmation() {
+  let affirmationElement = document.querySelector("#affirmation");
+  let random = affirmations[Math.floor(Math.random() * affirmations.length)];
 
-  if (favFlower === "rose") {
-    updateHeading(
-      `<span id="flower">${favFlower}🌹</span><br/><span id="greeting"> Hello ${name}</span><br /><span class="encouragement"> Just breathe...you've got this!</span> `
-    );
-  } else {
-    updateHeading(
-      `${favFlower}💐<br/><span id= "greeting"> Hello ${name}</span><br/><span class="encouragement">Just breathe...you've got this! `
-    );
-  }
+  affirmationElement.textContent = "";
+  new Typewriter("#affirmation", {
+    strings: [random],
+    autoStart: true,
+    cursor: null,
+    deleteChars: false,
+  });
 }
 
 let positivityButton = document.querySelector("button");
-
-positivityButton.addEventListener("click", breatheIn);
+positivityButton.addEventListener("click", showAffirmation);

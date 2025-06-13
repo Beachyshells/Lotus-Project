@@ -1,5 +1,5 @@
 const affirmations = [
-  "~ You are enough, just as you are 🧘🏻‍♀️",
+  "~ You are enough, just as you are",
   "~ Breathe in calm, breathe out stress.",
   "~ Every day is a new beginning.",
   "~ You are growing stronger each moment.",

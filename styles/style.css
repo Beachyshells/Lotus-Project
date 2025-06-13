@@ -1,10 +1,13 @@
 .layered-background {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
   background-color: rgb(185, 184, 204);
   background-image: url("./images/background-lotus.jpg");
   background-size: cover;
   background-position: center;
-  position: relative;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 .layered-background::before {
@@ -14,44 +17,94 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(30, 30, 30, 0.5); /* Adjust the last number for darkness */
+  background: rgba(30, 30, 30, 0.7);
   z-index: 1;
   pointer-events: none;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.navbar {
+  background: #adc49b;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  position: fixed; /* Add this */
+  z-index: 10; /* And this */
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #2d3a1f;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+  color: #6e8b4a;
 }
 .styling-container {
   width: 600px;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+  margin-top: 90px;
   text-align: center;
   position: relative;
-  background-color: beige;
+  background-color: rgb(249, 249, 245);
   padding: 40px 16px;
   z-index: 1;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .heading-container {
-  display: inline-flex;
-  background-color: #ccdab7;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 24px;
+  background-color: #c7e1b2;
+  padding: 20px 10px;
 }
 .heading {
-  font-size: 44px;
+  font-size: 40px;
+  font-family: "Syncopate", sans-serif;
+  font-weight: 300;
+  margin: 0;
 
-  margin: 0 auto;
-  margin-right: 110px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 2px;
 }
-.yoga {
-  width: 100px;
-  height: 100px;
+.animated {
+  width: 40px;
+  height: 40px;
+  animation: float 2.5s ease-in-out infinite;
+  margin: auto 10px;
+  height: auto;
 }
-img.lotus {
-  width: 100%;
-  max-width: 100px;
-  margin: 10px 0;
-  margin-left: 10px;
-  border-radius: 50%;
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 h2 {
   padding-top: 10px;
@@ -60,24 +113,29 @@ h2 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+.mantra,
+.mantra-heading {
+  font-size: 18px;
+  font-weight: 700;
+}
 p {
   line-height: 125%;
+  letter-spacing: 0.1em;
 }
 .target {
   border: 1px solid #ffdff7;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0.3em 0.3em 1em rgb(22, 21, 21);
   padding: 25px;
-  transition-property: background-color;
+  position: relative;
+  z-index: 10;
+  background-color: #c7e1b2;
   transition-duration: 1s;
   cursor: pointer;
 }
 
 .target:hover {
-  background-color: #eee;
-}
-:target {
-  transform: pressed;
+  background-color: #9eb38d;
 }
 
 img {
@@ -123,7 +181,7 @@ hr {
 a {
   display: block;
   padding: 20px;
-  color: #1c1a1b;
+  color: #8604a0;
 }
 
 dotlottie-player {

@@ -28,14 +28,14 @@ body {
   height: 100%;
 }
 .navbar {
-  background: #adc49b;
-
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-  position: fixed; /* Add this */
-  z-index: 10; /* And this */
+  background: linear-gradient(90deg, #a259c6 0%, #adc49b 100%);
+  box-shadow: 0 4px 16px rgba(162, 89, 198, 0.15);
+  position: fixed;
+  z-index: 10;
   width: 100%;
   top: 0;
   left: 0;
+  font-size: larger;
 }
 
 .navbar ul {
@@ -48,16 +48,16 @@ body {
 }
 
 .navbar a {
-  text-decoration: none;
-  color: #2d3a1f;
-  font-weight: bold;
-  font-size: 18px;
-  transition: color 0.2s;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
 }
 
 .navbar a:hover,
 .navbar a:focus {
-  color: #6e8b4a;
+  background: rgb(244, 227, 245);
+  color: #a259c6;
 }
 .styling-container {
   width: 600px;
@@ -166,17 +166,20 @@ img {
   font-size: 25px;
   font-weight: bold;
 }
-.target {
-  transition-property: background-color;
-  transition-duration: 200ms;
-  background-color: #ccdab7;
+button.target {
+  background: #adc49b; /* green */
+  color: black;
+  font-size: large;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 16px 4px #a259c6, 0 2px 8px #adc49b88;
+
+  transition: background 0.6s, box-shadow 0.6s;
 }
 
-.target:hover,
-.target:focus,
-.target:active {
-  background-color: #dcddda;
-  box-shadow: none;
+button.target.toggled {
+  color: white;
+  box-shadow: 0 0 24px 4px #34b8cf, 0 2px 8px #adc49b88;
 }
 
 hr {

@@ -21,14 +21,16 @@ const affirmations = [
 function showAffirmation() {
   let affirmationElement = document.querySelector("#affirmation");
   let random = affirmations[Math.floor(Math.random() * affirmations.length)];
+  affirmationElement.textContent = ""; // Clear previous text
 
-  affirmationElement.textContent = "";
   new Typewriter("#affirmation", {
     strings: [random],
     autoStart: true,
     cursor: null,
   });
+  let positivityButton = document.querySelector("button.target");
+  positivityButton.classList.toggle("toggled");
 }
 
-let positivityButton = document.querySelector("button");
+let positivityButton = document.querySelector("button.target");
 positivityButton.addEventListener("click", showAffirmation);

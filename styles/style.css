@@ -1,9 +1,9 @@
 .layered-background {
+  position: relative;
   min-height: 100vh;
   width: 100vw;
-  position: relative;
   background-color: rgb(185, 184, 204);
-  background-image: url("./images/background-lotus.jpg");
+  background-image: url("./images/flower2.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -17,8 +17,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(30, 30, 30, 0.7);
-  z-index: 1;
+  background: rgba(30, 30, 30, 0.3);
+  z-index: 0;
   pointer-events: none;
 }
 html,
@@ -27,6 +27,7 @@ body {
   padding: 0;
   height: 100%;
 }
+
 .navbar {
   background: linear-gradient(90deg, #a259c6 0%, #adc49b 100%);
   box-shadow: 0 4px 16px rgba(162, 89, 198, 0.15);
@@ -83,7 +84,7 @@ body {
   justify-content: center;
   gap: 24px;
   margin-bottom: 24px;
-  background-color: #c7e1b2;
+  background-color: #6f8c80;
   padding: 20px 10px;
 }
 .heading {

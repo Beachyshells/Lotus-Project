@@ -18,13 +18,19 @@ const affirmations = [
   "~ You are exactly where you need to be.",
 ];
 
+let userName = prompt("What is your name?");
+alert(
+  `Welcome ${userName} feel free to listen to music or enjoy an inspirational quote below`
+);
+
 function showAffirmation() {
   let affirmationElement = document.querySelector("#affirmation");
   let random = affirmations[Math.floor(Math.random() * affirmations.length)];
-  affirmationElement.textContent = ""; // Clear previous text
+  affirmationElement.textContent = "";
+  let personalized = userName ? `Dear ${userName}, ${random}` : random;
 
   new Typewriter("#affirmation", {
-    strings: [random],
+    strings: [personalized],
     autoStart: true,
     cursor: null,
   });

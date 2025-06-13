@@ -27,7 +27,6 @@ function showAffirmation() {
     strings: [random],
     autoStart: true,
     cursor: null,
-    deleteChars: false,
   });
 }
 

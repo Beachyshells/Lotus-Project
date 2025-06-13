@@ -1,10 +1,10 @@
 .layered-background {
-  position: relative;
   background-color: rgb(185, 184, 204);
-  background-image: url("StockCake-Tranquil Floating Lotus_1749661075.jpg");
+  background-image: url("./images/background-lotus.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.8;
+  position: relative;
+  background-attachment: fixed;
 }
 
 .layered-background::before {
@@ -14,7 +14,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(132, 132, 132, 0.5);
+  background: rgba(30, 30, 30, 0.5); /* Adjust the last number for darkness */
   z-index: 1;
   pointer-events: none;
 }
@@ -37,8 +37,14 @@
 }
 .heading {
   font-size: 44px;
-  margin: auto;
+
+  margin: 0 auto;
   margin-right: 110px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.yoga {
+  width: 100px;
+  height: 100px;
 }
 img.lotus {
   width: 100%;
@@ -118,4 +124,8 @@ a {
   display: block;
   padding: 20px;
   color: #1c1a1b;
+}
+
+dotlottie-player {
+  margin: 0 auto;
 }

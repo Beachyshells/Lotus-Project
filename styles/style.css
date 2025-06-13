@@ -71,6 +71,11 @@ body {
   padding: 40px 16px;
   z-index: 1;
   opacity: 0.6;
+  box-shadow: 0 8px 32px 0 rgba(253, 250, 250, 0.45),
+    /* white glow */ 0 2px 8px 0 rgba(0, 0, 0, 0.1); /* subtle shadow */
+  border-radius: 16px; /* optional, for softer corners */
+  background: rgba(255, 255, 255, 0.85); /* optional, for a frosted look */
+  backdrop-filter: blur(2px); /* optional, for extra depth */
 }
 .heading-container {
   display: flex;

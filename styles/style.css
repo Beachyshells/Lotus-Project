@@ -30,7 +30,7 @@ body {
 
 .navbar {
   background: linear-gradient(90deg, #a259c6 0%, #adc49b 100%);
-  box-shadow: 0 4px 16px rgba(162, 89, 198, 0.15);
+  box-shadow: 0 4px 16px rgba(162, 89, 198, 0.25);
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -74,7 +74,7 @@ body {
   opacity: 0.6;
   box-shadow: 0 8px 32px 0 rgba(253, 250, 250, 0.45),
     /* white glow */ 0 2px 8px 0 rgba(0, 0, 0, 0.1); /* subtle shadow */
-  border-radius: 16px; /* optional, for softer corners */
+  border-radius: 6px; /* optional, for softer corners */
   background: rgba(255, 255, 255, 0.85); /* optional, for a frosted look */
   backdrop-filter: blur(2px); /* optional, for extra depth */
 }
@@ -85,6 +85,7 @@ body {
   gap: 24px;
   margin-bottom: 24px;
   background-color: #6f8c80;
+  border-radius: 3px;
   padding: 20px 10px;
 }
 .heading {
@@ -95,23 +96,7 @@ body {
 
   letter-spacing: 2px;
 }
-.animated {
-  width: 40px;
-  height: 40px;
-  animation: float 2.5s ease-in-out infinite;
-  margin: auto 10px;
-  height: auto;
-}
 
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
 h2 {
   padding-top: 10px;
   font-size: 20px;
@@ -162,7 +147,11 @@ img {
   font-weight: lighter;
   font-style: oblique;
 }
-
+.animation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .encouragement {
   font-size: 25px;
   font-weight: bold;
@@ -193,9 +182,6 @@ a {
   color: #8604a0;
 }
 
-dotlottie-player {
-  margin: 0 auto;
-}
 @media (max-width: 600px) {
   .styling-container {
     width: 95%;
@@ -232,8 +218,11 @@ dotlottie-player {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
   width: 100%;
   margin: 24px 0;
+  background: linear-gradient(90deg, #a259c6 0%, #adc49b 100%);
+  border-radius: 3px;
 }
 
 @media (max-width: 600px) {

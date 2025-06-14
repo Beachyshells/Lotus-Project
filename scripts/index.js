@@ -1,3 +1,12 @@
+let userName = prompt("What is your name?");
+while (!userName || userName.trim() === "") {
+  alert("Please introduce yourself");
+  userName = prompt("What is your name?");
+}
+alert(
+  `Welcome ${userName}, feel free to listen to music or enjoy an inspirational quote below`
+);
+
 const affirmations = [
   "~ You are enough, just as you are",
   "~ Breathe in calm, breathe out stress.",
@@ -17,11 +26,6 @@ const affirmations = [
   "~ Strength grows in the calm of your heart.",
   "~ You are exactly where you need to be.",
 ];
-
-let userName = prompt("What is your name?");
-alert(
-  `Welcome ${userName} feel free to listen to music or enjoy an inspirational quote below`
-);
 
 function showAffirmation() {
   let affirmationElement = document.querySelector("#affirmation");

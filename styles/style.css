@@ -242,3 +242,8 @@ dotlottie-player {
     height: 180px;
   }
 }
+.yoga {
+  border-radius: 40%;
+  box-shadow: 0 0 24px 6px #a259c6, 0 2px 8px #adc49b88;
+  margin-top: 30px;
+}

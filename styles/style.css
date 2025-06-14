@@ -115,7 +115,7 @@ h2 {
 p {
   line-height: 125%;
   letter-spacing: 0.1em;
-  margin: 40px auto;
+  margin: 60px auto;
 }
 
 .target {
@@ -221,8 +221,12 @@ a {
     padding: 4px 8px;
   }
 }
+.you-are-the-lotus {
+  padding: 0 30px;
+}
 .video-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px 0;

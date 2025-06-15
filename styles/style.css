@@ -335,3 +335,8 @@ a {
     height: 180px;
   }
 }
+@media (max-width: 350px) {
+  .image {
+    padding-left: 8px;
+  }
+}

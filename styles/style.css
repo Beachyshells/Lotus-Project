@@ -301,6 +301,7 @@ a {
 
   .top-heading {
     font-size: 26px;
+    gap: 18px;
   }
 
   .heading {

@@ -339,4 +339,7 @@ a {
   .heading-container {
     padding-left: 10px;
   }
+  .image {
+    margin-right: 10px;
+  }
 }

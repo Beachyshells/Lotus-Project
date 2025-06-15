@@ -307,7 +307,7 @@ a {
   .heading {
     font-size: 28px;
   }
-  .image {
+  .heading-image {
     margin-left: 10px;
   }
   .lotus-animated {
@@ -336,7 +336,7 @@ a {
   }
 }
 @media (max-width: 350px) {
-  .image {
-    padding-left: 30px;
+  .heading-image {
+    padding-left: 20px;
   }
 }

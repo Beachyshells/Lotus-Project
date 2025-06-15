@@ -341,4 +341,8 @@ a {
     overflow: hidden;
     font-size: 22px;
   }
+  .image {
+    width: 40px;
+    height: auto;
+  }
 }

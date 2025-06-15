@@ -298,6 +298,11 @@ a {
     padding: 16px 4px;
     margin-top: 70px;
   }
+
+  .top-heading {
+    font-size: 26px;
+  }
+
   .heading {
     font-size: 28px;
   }

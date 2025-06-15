@@ -337,12 +337,6 @@ a {
 
 @media (max-width: 300px) {
   .heading-container {
-    width: 95%;
-    overflow: hidden;
-    font-size: 22px;
-  }
-  .image {
-    width: 35px;
-    height: auto;
+    padding-left: 10px;
   }
 }

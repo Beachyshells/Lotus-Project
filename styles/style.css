@@ -1,3 +1,12 @@
+/* ========== Base Layout ========== */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 .layered-background {
   position: relative;
   min-height: 100vh;
@@ -21,14 +30,8 @@
   z-index: 0;
   pointer-events: none;
 }
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow-x: hidden;
-}
 
+/* ========== Navbar ========== */
 .navbar {
   background: linear-gradient(90deg, #a259c6 0%, #adc49b 100%);
   box-shadow: 0 4px 16px rgba(162, 89, 198, 0.25);
@@ -61,6 +64,8 @@ body {
   background: rgb(244, 227, 245);
   color: #a259c6;
 }
+
+/* ========== Containers & Headings ========== */
 .styling-container {
   width: 600px;
   max-width: 100%;
@@ -77,6 +82,7 @@ body {
     0 2px 8px 0 rgba(0, 0, 0, 0.1);
   border-radius: 6px;
 }
+
 .heading-container {
   display: flex;
   align-items: center;
@@ -94,18 +100,18 @@ body {
   font-family: "Syncopate", sans-serif;
   font-weight: 300;
   margin: 0;
-
   letter-spacing: 2px;
 }
+
 .heading {
   font-size: 30px;
   font-family: "Syncopate", sans-serif;
   font-weight: 300;
   margin: 20px;
-
   letter-spacing: 2px;
 }
 
+/* ========== About Section ========== */
 .about {
   padding-top: 10px;
   font-size: 20px;
@@ -113,20 +119,47 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
 .about-heading {
   display: inline-flex;
   flex-direction: row;
   width: 100%;
-
   justify-content: space-evenly;
 }
 
+/* ========== Typography ========== */
 p {
   line-height: 125%;
   letter-spacing: 0.1em;
   margin: 60px auto;
 }
 
+.mantra,
+.mantra-heading {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#greeting {
+  font-size: 35px;
+  font-weight: lighter;
+  font-style: oblique;
+}
+
+.encouragement {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#positivity .encouragement {
+  font-size: 10px;
+  font-style: italic;
+  font-weight: lighter;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* ========== Buttons ========== */
 .target {
   border: 1px solid #ffdff7;
   border-radius: 5px;
@@ -143,43 +176,13 @@ p {
   background-color: #9eb38d;
 }
 
-img {
-  display: block;
-  margin: 0 auto;
-  width: 100px;
-}
-
-#positivity .encouragement {
-  font-size: 10px;
-  font-style: italic;
-  font-weight: lighter;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-#greeting {
-  font-size: 35px;
-  font-weight: lighter;
-  font-style: oblique;
-}
-
-.animation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.encouragement {
-  font-size: 25px;
-  font-weight: bold;
-}
 button.target {
-  background: #adc49b; /* green */
+  background: #adc49b;
   color: black;
   font-size: large;
   border: none;
   border-radius: 8px;
   box-shadow: 0 0 16px 4px #a259c6, 0 2px 8px #adc49b88;
-
   transition: background 0.6s, box-shadow 0.6s;
 }
 
@@ -188,21 +191,112 @@ button.target.toggled {
   box-shadow: 0 0 24px 4px #34b8cf, 0 2px 8px #adc49b88;
 }
 
+/* ========== Images ========== */
+img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.yoga {
+  border-radius: 40%;
+  box-shadow: 0 0 24px 6px #a259c6, 0 2px 8px #adc49b88;
+  margin-top: 30px;
+}
+
+.yoga-silhouette {
+  margin: auto 0;
+  padding-top: 10px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+}
+
+/* ========== Animation ========== */
+.animation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* ========== Video Section ========== */
+.video-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 20px 0;
+  width: 100%;
+  margin: 24px 0;
+  background: linear-gradient(90deg, #a259c6 0%, #adc49b 100%);
+  border-radius: 5px;
+}
+
+.video-frame {
+  display: inline-block;
+  background-color: rgb(98, 120, 120);
+  padding: 30px 35px;
+  border-radius: 5px;
+}
+
+/* ========== Music Video Credits ========== */
+.musicVideoCredits {
+  font-size: x-small;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(245, 243, 247, 0.85);
+  box-shadow: 0 0 16px 4px #a259c6;
+  border-radius: 8px;
+  padding: 6px 16px;
+  margin-top: 8px;
+  color: #333;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.author {
+  display: inline;
+  padding: 2px;
+  color: rgb(114, 140, 130);
+}
+
+.author:hover {
+  color: #a259c6;
+}
+
+/* ========== Contact Section ========== */
+.contact p {
+  justify-items: space-between;
+  font-size: 12px;
+  border: 5px solid rgb(248, 245, 248) 1;
+}
+
+/* ========== Utility ========== */
+.you-are-the-lotus {
+  padding: 0 30px;
+}
+
+/* ========== Horizontal Rule ========== */
 hr {
   background-color: #ccdab7;
   height: 2px;
 }
+
+/* ========== Links ========== */
 a {
   display: block;
   padding: 20px;
   color: #8604a0;
 }
 
+/* ========== Responsive Styles ========== */
 @media (max-width: 600px) {
   .styling-container {
     width: 95%;
     padding: 16px 4px;
-    margin-top: 70px; /* adjust if you have a fixed navbar */
+    margin-top: 70px;
   }
   .heading {
     font-size: 28px;
@@ -217,8 +311,6 @@ a {
   a {
     font-size: 16px;
   }
-}
-@media (max-width: 600px) {
   .navbar {
     padding: 6px 0;
   }
@@ -229,84 +321,14 @@ a {
     font-size: 15px;
     padding: 4px 8px;
   }
-}
-
-@media (max-width: 300px) {
-  .heading-container {
-    font-size: 24px;
-  }
-}
-.you-are-the-lotus {
-  padding: 0 30px;
-}
-.video-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  padding: 20px 0;
-  width: 100%;
-  margin: 24px 0;
-  background: linear-gradient(90deg, #a259c6 0%, #adc49b 100%);
-  border-radius: 5px;
-}
-
-@media (max-width: 600px) {
   .video-container iframe {
     width: 100%;
     height: 180px;
   }
 }
-.video-frame {
-  display: inline-block;
-  background-color: rgb(98, 120, 120);
-  padding: 30px 35px;
-  border-radius: 5px;
-}
 
-.musicVideoCredits {
-  font-size: x-small;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: rgba(245, 243, 247, 0.85); /* more visible white */
-  box-shadow: 0 0 16px 4px #a259c6;
-  border-radius: 8px;
-  padding: 6px 16px;
-  margin-top: 8px;
-  color: #333;
-  white-space: nowrap;
-  width: fit-content;
-}
-.author {
-  display: inline;
-  padding: 2px;
-  color: rgb(114, 140, 130);
-}
-.author:hover {
-  color: #a259c6;
-}
-.contact p {
-  justify-items: space-between;
-  font-size: 12px;
-  border: 5px solid rgb(248, 245, 248) 1;
-}
-.mantra,
-.mantra-heading {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.yoga {
-  border-radius: 40%;
-  box-shadow: 0 0 24px 6px #a259c6, 0 2px 8px #adc49b88;
-  margin-top: 30px;
-}
-.yoga-silhouette {
-  margin: auto 0;
-  padding-top: 10px;
-  width: 23px;
-  height: 23px;
-  border-radius: 50%;
+@media (max-width: 300px) {
+  .top-container {
+    font-size: 24px;
+  }
 }

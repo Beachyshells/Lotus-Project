@@ -337,7 +337,6 @@ a {
 }
 @media (max-width: 350px) {
   .image {
-    padding-left: 8px;
-    width: 80px;
+    padding-left: 30px;
   }
 }

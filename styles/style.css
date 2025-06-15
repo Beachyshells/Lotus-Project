@@ -26,6 +26,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -88,7 +89,7 @@ body {
   padding-right: 40px;
 }
 
-.heading {
+.top-heading {
   font-size: 40px;
   font-family: "Syncopate", sans-serif;
   font-weight: 300;
@@ -96,8 +97,16 @@ body {
 
   letter-spacing: 2px;
 }
+.heading {
+  font-size: 30px;
+  font-family: "Syncopate", sans-serif;
+  font-weight: 300;
+  margin: 20px;
 
-h2 {
+  letter-spacing: 2px;
+}
+
+.about {
   padding-top: 10px;
   font-size: 20px;
   font-style: italic;
@@ -229,11 +238,12 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
   padding: 20px 0;
   width: 100%;
   margin: 24px 0;
   background: linear-gradient(90deg, #a259c6 0%, #adc49b 100%);
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 @media (max-width: 600px) {
@@ -242,7 +252,40 @@ a {
     height: 180px;
   }
 }
+.video-frame {
+  display: inline-block;
+  background-color: rgb(98, 120, 120);
+  padding: 30px 35px;
+  border-radius: 5px;
+}
 
+.musicVideoCredits {
+  font-size: x-small;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(245, 243, 247, 0.85); /* more visible white */
+  box-shadow: 0 0 16px 4px #a259c6;
+  border-radius: 8px;
+  padding: 6px 16px;
+  margin-top: 8px;
+  color: #333;
+  white-space: nowrap;
+  width: fit-content;
+}
+.author {
+  display: inline;
+  padding: 2px;
+  color: rgb(114, 140, 130);
+}
+.author:hover {
+  color: #a259c6;
+}
+.contact p {
+  justify-items: space-between;
+  font-size: 12px;
+  border: 5px solid rgb(248, 245, 248) 1;
+}
 .mantra,
 .mantra-heading {
   font-size: 18px;

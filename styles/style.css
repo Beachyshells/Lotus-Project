@@ -339,9 +339,9 @@ a {
   .styling-container {
     width: 95%;
     overflow: hidden;
+    font-size: 24px;
   }
   .top-heading {
-    font-size: 24px;
   }
   .image {
     max-width: 100%;

@@ -295,7 +295,7 @@ a {
 @media (max-width: 600px) {
   .styling-container {
     width: 95%;
-    padding: 16px 4px;
+    padding: 16px 8px;
     margin-top: 70px;
   }
 

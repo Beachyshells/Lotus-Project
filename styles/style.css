@@ -335,7 +335,7 @@ a {
     height: 180px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 300px) {
   .heading-image {
     padding-left: 50px;
   }

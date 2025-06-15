@@ -336,7 +336,7 @@ a {
 }
 
 @media (max-width: 300px) {
-  .styling-container {
+  .heading-container {
     width: 95%;
     overflow: hidden;
     font-size: 22px;

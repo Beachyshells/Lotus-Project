@@ -295,7 +295,7 @@ a {
 @media (max-width: 600px) {
   .styling-container {
     width: 95%;
-    padding: 16px 8px;
+    padding: 16px 4px;
     margin-top: 70px;
   }
 
@@ -335,5 +335,8 @@ a {
 @media (max-width: 300px) {
   .top-heading {
     font-size: 24px;
+  }
+  .image {
+    padding-left: 6px;
   }
 }

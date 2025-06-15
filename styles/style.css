@@ -232,7 +232,7 @@ a {
 }
 
 @media (max-width: 300px) {
-  .top-heading {
+  .heading-container {
     font-size: 24px;
   }
 }

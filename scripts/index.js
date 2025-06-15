@@ -38,6 +38,7 @@ function showAffirmation() {
     autoStart: true,
     cursor: null,
   });
+
   let positivityButton = document.querySelector("button.target");
   positivityButton.classList.toggle("toggled");
 }
